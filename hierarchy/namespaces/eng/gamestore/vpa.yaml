@@ -3,6 +3,9 @@ kind: VerticalPodAutoscaler
 metadata:
   name: nginx-vpa
 spec:
-  selector:
-    matchLabels:
-      app: nginx
+  targetRef:
+    apiVersion: "apps/v1"
+    kind: Deployment
+    name: nginx
+  updatePolicy:
+    updatePolicy: "Off"
