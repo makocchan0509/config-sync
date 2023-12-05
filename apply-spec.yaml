@@ -1,0 +1,11 @@
+applySpecVersion: 1
+spec:
+  configSync:
+    enabled: true
+    sourceType: git
+    sourceFormat: unstructured
+    syncRepo: https://github.com/makocchan0509/config-sync
+    syncBranch: main
+    secretType: none
+    policyDir: unstructure/
+    preventDrift: false
