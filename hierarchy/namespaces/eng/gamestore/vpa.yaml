@@ -8,4 +8,4 @@ spec:
     kind: Deployment
     name: nginx
   updatePolicy:
-    updatePolicy: "Off"
+    updateMode: "Off"
